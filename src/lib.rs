@@ -107,7 +107,7 @@ pub struct Invoker {
 
 /// The possible receivers of a message. A message can be sent to a specific
 /// connection, to the current channel chat or to the server chat.
-#[derive(Clone)]
+#[derive(Clone, PartialEq)]
 pub enum MessageReceiver {
 	Connection(ConnectionId),
 	Channel,
